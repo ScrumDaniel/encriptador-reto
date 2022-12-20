@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/encriptado.png" type="image/x-icon" />
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="logo">
+      <h1><img src="img/Logo.png" /></h1>
+    </div>
+    <section class="escribir-msj">
+      <div class="ok">
+        <div>
+          <textarea
+            class="mensaje-escrito"
+            placeholder="Ingrese el texto aqui"
+            name="texto-entrada"
+            id="texto-entrada"
+          ></textarea>
+          <p>
+            <img src="img/advertencia-modificado.png" />   Solo letras minúsculas y
+            sin acentos
+          </p>
+        </div>
+        <div class="btn">
+          <input
+            type="submit"
+            value="Encriptar"
+            class="btn-encriptar"
+            id="btn-encriptar"
+          />
+          <input
+            type="submit"
+            value="Desencriptar"
+            class="btn-desencriptar"
+            id="btn-desencriptar"
+          />
+        </div>
+      </div>
+      <div class="ok">
+        <div class="mensaje-recibido">
+          <textarea class="mensaje" id="mensaje"></textarea>
+          <img class="muñeco" id="muñeco" src="img/Muñeco.png" />
+          <h2 class="msj-noencontrado" id="msj-noencontrado">
+            Ningún mensaje fue encontrado
+          </h2>
+          <p class="msj-noencontrado-p" id="msj-noencontrado-p">
+            Solo letras minúsculas y sin acentos
+          </p>
+          <input
+            type="submit"
+            value="Copiar"
+            class="btn-copiar"
+            id="btn-copiar"
+          />
+        </div>
+      </div>
+    </section>
+    <script src="js/script.js"></script>
+  </body>
+</html>
